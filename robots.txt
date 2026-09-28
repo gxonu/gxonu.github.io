@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://gxonu.github.io/sitemap.xml
