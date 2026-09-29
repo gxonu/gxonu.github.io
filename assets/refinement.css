@@ -1,0 +1,63 @@
+/* Keep the original B typography and palette; refine density and interaction. */
+.publication-image{overflow:hidden;border-radius:6px;background:#fff}
+.publication-image img{max-height:none;transform:scale(1.045);transform-origin:center}
+.version-b .publication{grid-template-columns:230px minmax(0,1fr)}
+.version-b .publication-image img{max-height:none}
+.award-row{grid-template-columns:64px minmax(0,1fr) 185px;gap:14px;padding:14px 0;align-items:start}
+.award-main,.award-meta{min-width:0}
+.award-heading{display:flex;align-items:center;flex-wrap:wrap;gap:8px;line-height:1.5}
+.award-event{line-height:1.65}
+.award-meta{text-align:right}
+.award-host{margin:0;font-size:11px;line-height:1.65;text-wrap:pretty}
+.award-meta .resource-links{justify-content:flex-end;gap:4px;flex-wrap:wrap;margin-top:7px}
+.award-meta .resource-links a{padding:2px 5px;min-height:27px;font-size:10px}
+.rank-badge{display:inline-flex;align-items:center;padding:1px 6px;border:1px solid #5d647030;border-radius:4px;color:#5d6470;background:#5d647008;font:500 10px/1.6 'Inter',sans-serif}
+.ranked-first strong{color:#1f45c4}
+.rank-badge{font-size:11px;min-width:33px;justify-content:center;padding:1px 6px}
+.rank-1st{color:#1f45c4;border-color:#1f45c435;background:#1f45c40b}
+.rank-2nd{color:#171a1f;border-color:#171a1f35;background:#171a1f08}
+.rank-3rd{color:#5d6470;border-color:#5d647025;background:#5d647005}
+.award-venue{font-size:11px;line-height:1.65;color:#5d6470;margin:2px 0 0}
+.version-a .social-icons,.version-b .social-icons{display:flex;gap:7px;flex-wrap:nowrap;margin-top:19px}
+.version-a .social-icons .social-icon,.version-b .social-icons .social-icon{position:relative;display:inline-flex;flex:0 0 42px;align-items:center;justify-content:center;width:42px;height:42px;padding:10px;border:1px solid #171a1f1a;border-radius:9px;color:#171a1f;background:#fff;transition:transform .2s ease,color .2s ease,border-color .2s ease,background .2s ease}
+.social-icon svg{width:21px;height:21px;display:block}
+.social-icon .icon-tooltip{position:absolute;top:calc(100% + 7px);left:50%;transform:translateX(-50%);white-space:nowrap;padding:4px 7px;background:#171a1f;color:white;border-radius:4px;font:11px/1.5 'Inter',sans-serif;opacity:0;visibility:hidden;pointer-events:none;z-index:20}
+.social-icon:first-child .icon-tooltip{left:0;transform:none}
+.social-icon:last-child .icon-tooltip{left:auto;right:0;transform:none}
+.social-icon:hover .icon-tooltip,.social-icon:focus-visible .icon-tooltip{opacity:1;visibility:visible}
+.version-a .social-icons .social-icon:focus-visible,.version-b .social-icons .social-icon:focus-visible{color:#1f45c4;border-color:#1f45c4}
+@media(hover:hover) and (pointer:fine){.version-a .social-icons .social-icon:hover,.version-b .social-icons .social-icon:hover{color:#1f45c4;border-color:#1f45c460;background:#1f45c408;transform:translateY(-2px);text-decoration:none}}
+@media(prefers-reduced-motion:reduce){.social-icons .social-icon:hover{transform:none!important}}
+.publication,.project-card,.xp-logo,.award-row,.resource-links a,.tile{transition:transform .2s ease,background-color .2s ease,border-color .2s ease,box-shadow .2s ease}
+.publication-image img{transition:transform .25s ease}
+.award-row time{transition:color .2s ease}
+a:focus-visible,button:focus-visible{outline:2px solid #1f45c4;outline-offset:4px}
+.publication:focus-within,.project-card:focus-within{border-color:#1f45c480;box-shadow:0 4px 16px #1f45c40a}
+.award-row:focus-within{background:#1f45c405}
+@media(hover:hover) and (pointer:fine){
+ .publication:hover,.project-card:hover{transform:translateY(-3px);border-color:#1f45c455;box-shadow:0 6px 20px #171a1f0a}
+ .publication-image:hover img{transform:scale(1.07)}
+ .award-row:hover{background:#1f45c405;transform:translateY(-1px)}
+ .award-row:hover time{color:#1f45c4}
+ .resource-links a:hover,.xp-logo:hover{transform:translateY(-2px);background:#1f45c408;border-color:#1f45c460;text-decoration:none}
+}
+@media(max-width:1100px) and (min-width:861px){
+ .version-b .publication{grid-template-columns:1fr}
+ .version-b .publication-image{max-width:360px}
+ .version-b .award-row{grid-template-columns:58px minmax(0,1fr)}
+ .version-b .award-meta{grid-column:2;text-align:left}
+ .version-b .award-meta .resource-links{justify-content:flex-start}
+}
+@media(max-width:720px){
+ .version-b .publication{grid-template-columns:1fr}
+ .award-row{grid-template-columns:58px minmax(0,1fr);gap:4px 12px;padding:14px 0}
+ .award-meta{grid-column:2;text-align:left;display:flex;align-items:center;flex-wrap:wrap;gap:5px 12px}
+ .award-meta .resource-links{justify-content:flex-start;margin-top:0}
+ .award-meta .resource-links a{min-height:32px}
+}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto!important}
+ *,*::before,*::after{transition:none!important;animation:none!important}
+ .publication:hover,.project-card:hover,.award-row:hover,.resource-links a:hover,.xp-logo:hover,.tile:hover,.avatar:hover{transform:none!important}
+ .publication-image:hover img{transform:scale(1.045)!important}
+}

@@ -1,0 +1,58 @@
+/* Wider B layout, with the same typography and visual hierarchy. */
+.version-a .publication.publication-under-review,.version-b .publication.publication-under-review{grid-template-columns:minmax(0,1fr)}
+.version-b{--maxw:1360px;font-size:17px}
+.version-b .wrap{grid-template-columns:310px minmax(0,1fr);gap:3.75rem}
+.version-b .lead{font-size:18px;line-height:1.75}
+.version-b h2{font-size:28px}
+.version-b .side-name{font-size:35px}
+.version-b .side-role{font-size:16px;line-height:1.65}
+.version-b .research-interests{font-size:16px;padding-top:20px}
+.version-b .research-interests strong{font-size:13px;letter-spacing:.9px;margin-bottom:12px}
+.version-b .research-interests span{line-height:1.85;color:var(--ink)}
+.version-b .nav-name{font-size:18px}
+.version-b nav a.nl{font-size:13px}
+.version-b .news time,.version-b .xp-row time{font-size:12px}
+.version-b .xp-row h3{font-size:16px}
+.version-b .xp-row .role{font-size:14px}
+.version-b .xp-description{font-size:14px}
+.version-b .xp-toggle{font-size:12px}
+.version-b .publication{grid-template-columns:280px minmax(0,1fr);gap:26px}
+.version-b .publication h3{font-size:18px;line-height:1.5}
+.version-b .research-status,.version-b .research-role{font-size:12px}
+.version-b .tldr{font-size:15px;line-height:1.75}
+.version-b .year-label{font-size:13px}
+.version-b .resource-links a,.version-b .pending-link{font-size:12px;min-height:32px}
+.version-b .award-heading{font-size:15px}
+.version-b .award-event{font-size:15px}
+.version-b .award-host,.version-b .award-venue{font-size:12px}
+.version-b .award-row time{font-size:12px}
+.version-b .award-row{grid-template-columns:68px minmax(0,1fr) 205px}
+.version-b .award-meta .resource-links a{font-size:11px;padding:3px 7px}
+.version-b .project-card{grid-template-columns:220px minmax(0,1fr)}
+.version-b .project-copy h3{font-size:17px}
+.version-b .project-summary{font-size:15px;line-height:1.75}
+.version-b .project-role,.version-b .project-result{font-size:13px}
+.version-b .additional-work{font-size:13px}
+.version-b .leadership-entry h3{font-size:16px}
+.version-b .leadership-entry .role{font-size:13px}
+.version-b .leadership-entry p:not(.role){font-size:14px}
+.version-b .programs h3{font-size:14px}
+.version-b .programs p,.version-b footer{font-size:13px}
+@media(max-width:1100px) and (min-width:861px){
+ .version-b .wrap{grid-template-columns:260px minmax(0,1fr);gap:2.5rem}
+ .version-b .publication{grid-template-columns:1fr}
+ .version-b .award-row{grid-template-columns:58px minmax(0,1fr)}
+ .version-b .project-card{grid-template-columns:1fr}
+ .version-b .project-image{padding:16px}
+ .version-b .project-copy{padding:0 20px 22px}
+}
+@media(max-width:860px){
+ .version-b .wrap{grid-template-columns:1fr;gap:2.5rem}
+}
+@media(max-width:720px){
+ .version-b .publication,.version-b .project-card{grid-template-columns:1fr}
+ .version-b .award-row{grid-template-columns:58px minmax(0,1fr)}
+ .version-b .lead{font-size:17px}
+ .version-b .nav-inner{gap:18px}
+ .version-b nav a.nl{font-size:12px}
+}
