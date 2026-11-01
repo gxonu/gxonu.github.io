@@ -35,3 +35,6 @@
 .rank-1st{background:#fdf3d7;color:#9a7118;border-color:#9a711840}
 .rank-2nd{background:#eef1f4;color:#5f6b76;border-color:#5f6b7640}
 .rank-3rd{background:#f6e8dd;color:#96603a;border-color:#96603a40}
+
+/* Review badge follows the requested Kinam Kim reference. */
+#publications .research-status{display:inline-block;padding:.1rem .55rem;border-radius:6px;line-height:1.5;color:#1c46c2;background:#eef2fe;border:1px solid #c9d6fb;font-weight:600}
