@@ -4,3 +4,11 @@
 .publication-authors{font-size:13px;line-height:1.75;margin:9px 0 12px;color:inherit}
 .publication-authors strong{font-weight:600}
 .equal-contribution{display:block;font-size:12px;color:var(--muted,#5d6470);margin-top:3px}
+
+.publication-visual{min-width:0}
+.publication-icon-links{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:8px}
+.publication-icon-links a{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:6px;color:inherit;text-decoration:none;transition:color .18s ease,background-color .18s ease}
+.publication-icon-links a:hover{color:#1f45c4;background:#1f45c408}
+.publication-icon-links a:focus-visible{outline:2px solid #1f45c4;outline-offset:2px}
+.publication-icon-links svg{display:block}
+@media(prefers-reduced-motion:reduce){.publication-icon-links a{transition:none}}
