@@ -1,0 +1,6 @@
+/* OmniShowcase publication: native video controls and complete authors. */
+.publication-media{min-width:0;overflow:hidden;border-radius:6px;background:#000}
+.publication-video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain}
+.publication-authors{font-size:13px;line-height:1.75;margin:9px 0 12px;color:inherit}
+.publication-authors strong{font-weight:600}
+.equal-contribution{display:block;font-size:12px;color:var(--muted,#5d6470);margin-top:3px}
