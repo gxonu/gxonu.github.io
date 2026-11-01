@@ -29,3 +29,9 @@
 
 @media(max-width:1100px) and (min-width:861px){.version-b .award-icon-links{justify-content:flex-start}}
 @media(max-width:720px){.award-icon-links{justify-content:flex-start;margin-top:0}}
+
+/* Author identification and medal colors, following the requested reference. */
+.publication-authors .author-self{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.rank-1st{background:#fdf3d7;color:#9a7118;border-color:#9a711840}
+.rank-2nd{background:#eef1f4;color:#5f6b76;border-color:#5f6b7640}
+.rank-3rd{background:#f6e8dd;color:#96603a;border-color:#96603a40}
