@@ -8,7 +8,8 @@
 .version-b .side-role{font-size:16px;line-height:1.65}
 .version-b .research-interests{font-size:16px;padding-top:20px}
 .version-b .research-interests strong{font-size:13px;letter-spacing:.9px;margin-bottom:12px}
-.version-b .research-interests span{line-height:1.85;color:var(--ink)}
+.version-b .research-interests .interest-tags{display:flex;flex-wrap:wrap;gap:8px;align-items:flex-start}
+.version-b .research-interests .interest-tags span{display:inline-flex;align-items:center;max-width:100%;padding:6px 11px;border:1px solid #171a1f24;border-radius:8px;background:#171a1f04;font-size:15px;line-height:1.45;font-weight:500;color:var(--ink)}
 .version-b .nav-name{font-size:18px}
 .version-b nav a.nl{font-size:13px}
 .version-b .news time,.version-b .xp-row time{font-size:12px}
