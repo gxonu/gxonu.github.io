@@ -45,3 +45,14 @@
 .publication-visual{align-self:start}
 #publications .publication-authors{margin-bottom:8px}
 #publications .research-status{margin:0}
+
+/* A compact research highlight, linked to the original Hugging Face listing. */
+.publication-badges{display:flex;align-items:center;flex-wrap:wrap;gap:7px 9px;margin:0 0 10px}
+#publications .publication-badges .research-status{margin:0}
+.paper-highlight{display:inline-flex;align-items:center;gap:7px;max-width:100%;padding:3px 8px 3px 3px;border:1px solid #9a711840;border-radius:6px;background:#fdf3d7;color:#765612;font-size:12px;font-weight:500;line-height:1.5;text-decoration:none;transition:background-color .18s ease,border-color .18s ease}
+.paper-highlight-rank{display:inline-flex;align-items:center;justify-content:center;flex:none;min-width:26px;padding:1px 4px;border-radius:3px;background:#9a7118;color:#fff;font-weight:700;font-size:11px}
+.paper-highlight-arrow{font-size:14px;line-height:1}
+.paper-highlight:hover{background:#fae9b7;border-color:#9a711880;text-decoration:none;color:#654709}
+.paper-highlight:focus-visible{outline:2px solid #9a7118;outline-offset:3px}
+.paper-news-link{color:#765612;text-decoration:underline;text-decoration-color:#9a711860;text-underline-offset:3px}
+@media(prefers-reduced-motion:reduce){.paper-highlight{transition:none}}
