@@ -57,3 +57,7 @@
 
 /* Keep the two short status labels adjacent on narrow phones as well. */
 @media(max-width:360px){#publications .publication-badges .research-status,.publication-badges .paper-highlight{font-size:10.5px;padding:2px 5px}.publication-badges{gap:5px}}
+
+/* Ongoing research uses the established publication layout and status badge. */
+#ongoing .research-status{display:inline-block;margin:10px 0 0;padding:.1rem .55rem;border-radius:6px;line-height:1.5;color:#1c46c2;background:#eef2fe;border:1px solid #c9d6fb;font-weight:600}
+#ongoing .tldr{margin-top:10px}
